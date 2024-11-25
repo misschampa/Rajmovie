@@ -11,8 +11,8 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'Sharma movies')
-API_ID = int(environ.get('API_ID', '21250503'))
-API_HASH = environ.get('API_HASH', 'dc32d5392a299f1495ad7864be1f595a')
+API_ID = int(environ.get('API_ID', '22774407'))
+API_HASH = environ.get('API_HASH', 01eeb000bc7062daf60000d5bc3f93bd')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
@@ -28,8 +28,8 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002428095842'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7532511826 7459282233').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002269022170'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7459282233').split()]
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002249219491 -1002089669369').split()]
@@ -66,7 +66,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # MongoDB information
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sharmaMovies:sahil7753@cluster0.qiwvf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Missgulabobot:Missgulabobot@cluster0.uqdt9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Akmovie')
 
