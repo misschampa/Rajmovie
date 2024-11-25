@@ -12,7 +12,7 @@ id_pattern = re.compile(r'^.\d+$')
 # Bot information
 SESSION = environ.get('SESSION', 'Sharma movies')
 API_ID = int(environ.get('API_ID', '22774407'))
-API_HASH = environ.get('API_HASH', 01eeb000bc7062daf60000d5bc3f93bd')
+API_HASH = environ.get('API_HASH', '01eeb000bc7062daf60000d5bc3f93bd')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
