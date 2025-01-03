@@ -11,8 +11,8 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'Sharma movies')
-API_ID = int(environ.get('API_ID', '22774407'))
-API_HASH = environ.get('API_HASH', '01eeb000bc7062daf60000d5bc3f93bd')
+API_ID = int(environ.get('API_ID', '407'))
+API_HASH = environ.get('API_HASH', '01eeb000bc5bc3f93bd')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
@@ -66,7 +66,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # MongoDB information
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Missgulabobot:Missgulabobot@cluster0.uqdt9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Missgulabobot:Missgulabobot@clusority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Akmovie')
 
